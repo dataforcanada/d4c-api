@@ -1,17 +1,19 @@
-# d4c-api-statistical
+# d4c-api
 
-A multi-language client for accessing Canadian statistical web data. This repository provides a unified interface to fetch statistical data processed by the [d4c-datapkg-statistical](https://github.com/dataforcanada/d4c-datapkg-statistical) repository.
+A multi-language client for accessing Canadian data. This repository provides a unified interface to fetch:
+- Statistical data processed by the [d4c-datapkg-statistical](https://github.com/dataforcanada/d4c-datapkg-statistical) repository.
 
 ## Purpose
 
-The goal of this project is to provide a consistent way to query statistical metadata and raw tables across different programming environments. As the connectivity and retrieval layer for the **Data for Canada (d4c)** project, this API facilitates access to a decentralized, cloud-native open data infrastructure for Canada.
+The goal of this project is to provide a consistent way to query metadata and raw data across different programming environments. As the connectivity and retrieval layer for the **Data for Canada (d4c)** project, this API facilitates access to a decentralized, cloud-native open data infrastructure for Canada.
 
 ## Core Technologies
 
 The client is designed to interface with modern data distribution protocols:
 
-- **[STAC](https://stac-geoparquet.org/) & [GeoZarr](https://github.com/zarr-developers/geozarr-spec):** For metadata discovery and high-performance multidimensional data access.
-- **HTTP Seeding & BitTorrent:** For decentralized data distribution and efficient retrieval.
+- **[STAC](https://stac-geoparquet.org/) for metadata discovery. 
+- **[GeoZarr](https://github.com/zarr-developers/geozarr-spec):** Fo high-performance multidimensional data access.
+- **HTTP & P2P:** For decentralized data distribution and efficient retrieval.
 
 ## Multi-Language Support
 
