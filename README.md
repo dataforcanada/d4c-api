@@ -11,8 +11,8 @@ The goal of this project is to provide a consistent way to query metadata and ra
 
 The client is designed to interface with modern data distribution protocols:
 
-- **[STAC](https://stac-geoparquet.org/) for metadata discovery. 
-- **[GeoZarr](https://github.com/zarr-developers/geozarr-spec):** Fo high-performance multidimensional data access.
+- **[STAC](https://stac-geoparquet.org/):** For metadata discovery. 
+- **[GeoZarr](https://github.com/zarr-developers/geozarr-spec):** For high-performance multidimensional data access.
 - **HTTP & P2P:** For decentralized data distribution and efficient retrieval.
 
 ## Multi-Language Support
@@ -20,16 +20,16 @@ The client is designed to interface with modern data distribution protocols:
 The core connectivity logic is written in Rust and exported to other languages. This ensures that API calls, authentication methods, and data handling remain identical across all platforms.
 
 - **Rust:** The core crate for direct system-level access and performance-critical tasks.
-- **Python:** Idiomatic bindings optimized for data science and machine learning workflows.
-- **R:** Native wrappers designed for statistical analysis and reporting.
-- **[Other](https://github.com/dataforcanada/d4c-api-statistical/issues)**
+- **Python:** Idiomatic bindings.
+- **R:** Native wrappers.
+- **[Other](https://github.com/dataforcanada/d4c-api-statistical/issues)**.
 
 ## Repository Structure
 
 We separate the shared core from the language-specific wrappers:
 
 - **core/**: Rust source code handling HTTP requests, API authentication, and decentralized protocol logic.
-- **bindings/**: Language-specific implementations for Python and R.
+- **bindings/**: Language-specific implementations for Python, R, and **[Other](https://github.com/dataforcanada/d4c-api-statistical/issues)**.
 - **labs/**: Experimental area for testing new API endpoints or protocol implementations.
 
 ## Contributing
